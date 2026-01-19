@@ -13,11 +13,24 @@ We systematically investigate the key factors of Active Learning (AL) performanc
 
 ### Quick Start
 #### 1. Installation
-Clone the repository and set up the environment:
-'''
+First, clone the repository to your local machine:
+```bash
 git clone https://github.com/YisuanZ/biomolecule-al-decipher.git
 cd biomolecule-al-decipher
-conda create -n biomolecule-al-decipher python=3.11
-conda activate biomolecule-al-decipher
+```
+Then, set up the corresponding virtual environment according to the experiment type. Note that the separation of environments below is due to the special configuration requirements of our laboratory server. For experiment with ensemble-based and MC dropout UQ algorithms:
+```bash
+# Create and activate Conda virtual environment (named as you like)
+conda create -n AL python=3.9.6
+conda activate AL
+# Install all required dependencies in the environment
 pip install -r requirements.txt
-'''
+```
+For experiment with DKL UQ algorithm:
+```bash
+# Create and activate Conda virtual environment (named as you like)
+conda create -n ALdkl python=3.9.6
+conda activate ALdkl
+# Install all required dependencies in the environment
+pip install -r requirements_dkl.txt
+```
