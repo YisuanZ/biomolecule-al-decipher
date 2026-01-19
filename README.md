@@ -13,6 +13,7 @@ We systematically investigate the key factors of Active Learning (AL) performanc
 
 ### Repository Structure
 Below is the detailed directory and file layout of this repository, which helps you quickly locate code, dependency files, and result storage locations. Auto-generated directories (marked below) do not need to be created manually.
+```
 biomolecule-al-decipher/
 ├── checkpoints/ # Stores trained model parameters (auto-generated after training)/
 ├── result/ # Stores experimental results and generated plots (auto-generated after training)/
@@ -32,6 +33,7 @@ biomolecule-al-decipher/
 ├── requirements.txt # Dependencies for ensemble-based & MC dropout UQ experiments/
 ├── requirements_dkl.txt # Dependencies for DKL UQ experiments/
 └── README.md # Project documentation (this file)/
+```
 
 ### Quick Start
 This is a demonstration. By following this demo, you will be able to plot the calibration curves presented in the paper.
