@@ -349,6 +349,6 @@ def HGICompute(dataset, eps_ratio=0.2, min_neighbors=1):
 if __name__ == "__main__":
     CaliCurvePlot(
         result_dir='./result', 
-        save_dir='/result/calibration', 
+        save_dir='./result/calibration', 
         model_num=5
         )
