@@ -19,7 +19,7 @@ First, clone the repository to your local machine:
 git clone https://github.com/YisuanZ/biomolecule-al-decipher.git
 cd biomolecule-al-decipher
 ```
-Then, set up a corresponding virtual environment according to the type of experiment you wish to perform. It should be noted that the separation of the following environments is due to the specific configuration requirements of our laboratory server. For experiment with ensemble-based and MC dropout UQ algorithms:
+Then, set up a corresponding virtual environment according to the type of experiment you wish to perform. It should be noted that the separation of the following environments is due to the specific configuration requirements of our laboratory server. For experiments with ensemble-based and MC dropout UQ algorithms:
 ```bash
 # Create and activate Conda virtual environment (named as you like)
 conda create -n AL python=3.9.6
@@ -27,7 +27,7 @@ conda activate AL
 # Install all required dependencies in the environment
 pip install -r requirements.txt
 ```
-For experiment with DKL UQ algorithm:
+For experiments with the DKL UQ algorithm:
 ```bash
 # Create and activate Conda virtual environment (named as you like)
 conda create -n ALdkl python=3.9.6
@@ -35,7 +35,7 @@ conda activate ALdkl
 # Install all required dependencies in the environment
 pip install -r requirements_dkl.txt
 ```
-You may also combine the environments together based on your own condition.
+You may also combine the environments into one based on your own circumstances.
 #### 2. Training and result extraction
 Here, we take the ensemble-based UQ algorithm as an example. After ensuring that your environment is consistent with the description in the Installation section, locate the file ./src/UQ_Ensemble.py. This script can be run directly, and you may also configure its function parameters as needed. To execute the script, run the following command:
 ```bash
@@ -47,4 +47,4 @@ Once the results have been obtained, you can run the `./src/evaluation.py` scrip
 ```bash
 python ./src/evaluation.py
 ```
-Once the scipt is over, the plots will be stroed in the `./result/calibration` directory.
+Once the script is completed, the plots will be stored in the `./result/calibration` directory.
